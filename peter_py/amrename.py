@@ -1,7 +1,8 @@
-# Apple Song Renaming Utility
-# 2021-09-17T00:37:00-04:00
-# Peter-James-Mangelsdorf-201943
-# Uses Peter's REPL Aid
+"""
+Apple Song Renaming Utility
+
+WARNING INCOMPLETE DO NOT USE
+"""
 
 from repl import *
 

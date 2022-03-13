@@ -1,5 +1,7 @@
+"""
+Tests for scripts
 
-# Empty for Now
+WARNING EMPTY
 
-# Try moving tests out of individual scripts and instead to over here
-
+FUTURE Try moving tests out of individual scripts and instead to over here
+"""
