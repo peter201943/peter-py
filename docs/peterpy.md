@@ -54,7 +54,7 @@ Peter's Personal Python Shell
   - would this be best as a library?
     - after launching python repl, do `cd("music/"); cleanup.bcrename("*")`
 - chosen solution
-  - think I will just create an alias `doskey pp=python -m C:\Users\peter\projects\peter-py\peterpy\peterpy.py` (`pp` is "peter py")
+  - think I will just create an alias `doskey pp=py -i C:\Users\peter\projects\peter-py\peterpy.py` (`pp` is "peter py")
     - where `peterpy.py` simply imports (`from _ import *`) from my other utilities
 
 ## Python CLI Publishing
@@ -70,7 +70,11 @@ Peter's Personal Python Shell
 - [ ] [How to create permanent PowerShell Aliases](https://stackoverflow.com/questions/24914589/how-to-create-permanent-powershell-aliases)
 
 ## Misc
-- [x] [How to view profile on Linux](https://askubuntu.com/questions/886483/how-to-view-profile-on-linux)
+- [How to view profile on Linux](https://askubuntu.com/questions/886483/how-to-view-profile-on-linux)
+- [Windows batch files: .bat vs .cmd?](https://stackoverflow.com/questions/148968/windows-batch-files-bat-vs-cmd)
+- [What is the at sign (@) in a batch file and what does it do?](https://stackoverflow.com/questions/21074863/what-is-the-at-sign-in-a-batch-file-and-what-does-it-do)
+- [What does %~dp0 mean, and how does it work?](https://stackoverflow.com/questions/5034076/what-does-dp0-mean-and-how-does-it-work?rq=1)
+- [How to import the class within the same directory or sub directory?](https://stackoverflow.com/questions/4142151/how-to-import-the-class-within-the-same-directory-or-sub-directory)
 
 ## Call it "Personal Py"
 - And let individual users set their name in `config.py`
@@ -80,3 +84,16 @@ Peter's Personal Python Shell
 - Not sure how to do this just yet
 - Will need to consider later
 
+## Debugging Launching
+- This is turning into a real nuisance
+- [4.8. Python Launcher for Windows](https://docs.python.org/3/using/windows.html?highlight=launch#python-launcher-for-windows)
+- [Python error "ImportError: No module named"](https://stackoverflow.com/questions/338768/python-error-importerror-no-module-named)
+- [Error while finding spec for 'fibo.py' (`<class 'AttributeError'>: 'module' object has no attribute '__path__'`)](https://stackoverflow.com/questions/36230492/error-while-finding-spec-for-fibo-py-class-attributeerror-module-objec)
+- [Relative imports in Python 3](https://stackoverflow.com/questions/16981921/relative-imports-in-python-3)
+- [Execute an installed Python package as a script?](https://stackoverflow.com/questions/4050120/execute-an-installed-python-package-as-a-script)
+- [How do I load a file into the python console?](https://stackoverflow.com/questions/5280178/how-do-i-load-a-file-into-the-python-console)
+- [youtube-dl - download videos from youtube.com or other video platforms](https://github.com/ytdl-org/youtube-dl) (as an example Python project to look at)
+- [ytdlp - A youtube-dl fork with additional features and fixes](https://github.com/yt-dlp/yt-dlp) (as a comparative example of modernization)
+
+## Notes
+- Should really make a separate `notes.md` or `notes/` rather than just dumping random stuff in here...

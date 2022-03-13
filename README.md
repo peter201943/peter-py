@@ -32,7 +32,7 @@ See the [docs](docs/readme.md) for help
 - You can edit your profile at `~/.profile` by using any regular text editor
 - you will want to add the following line to your profile:
 ```bash
-alias pp="python3 -m $INSTALLPATH/peter-py/peterpy/peterpy.py"
+alias pp="python3 -i $INSTALLPATH/peter-py/peterpy/__main__.py"
 ```
 - where `$INSTALLPATH` is wherever you put peterpy
 - You can rename the alias to whatever you want, I'd suggest the first letter of your name
@@ -42,10 +42,10 @@ alias pp="python3 -m $INSTALLPATH/peter-py/peterpy/peterpy.py"
 
 ### Windows Batch
 - Windows Batch has no formal system for remembering user profiles
-- Since `cmd` launches from `C:\Users\%USER%` by default, I simply put a "`profile.bat`" there and remember to run it as the first thing I do when I open `cmd`
+- Since `cmd` launches from `C:\Users\%USER%` by default, I simply put a "`profile.cmd`" there and remember to run it as the first thing I do when I open `cmd`
 - You will want to add this line to it:
 ```batch
-doskey pp=python -m %INSTALLPATH%\peter-py\peterpy\peterpy.py
+doskey pp=py -i %INSTALLPATH%\peter-py\peter_py\__main__.py
 ```
 - Where `%INSTALLPATH%` is wherever you installed peterpy to
 - You can rename the alias to whatever you want, I'd suggest the first letter of your name
@@ -54,7 +54,7 @@ doskey pp=python -m %INSTALLPATH%\peter-py\peterpy\peterpy.py
 - Git for Windows (TODO link) adds a thin Bash wrapper to Windows and includes a `profile` file at `C:\Users\%USER%\.bashrc`
 - You will want to add this line to it:
 ```bash
-alias pp="python3 -m $INSTALLPATH/peter-py/peterpy/peterpy.py"
+alias pp="python3 -i $INSTALLPATH/peter-py/peterpy/__main__.py"
 ```
 - where `$INSTALLPATH` is wherever you put peterpy
 - You can rename the alias to whatever you want, I'd suggest the first letter of your name

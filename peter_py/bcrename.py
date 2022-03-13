@@ -26,7 +26,7 @@
 # Peter-James-Mangelsdorf-201943
 # Uses Peter's REPL Aid
 
-from .repl import *
+from repl import *
 
 # Display Options (String)
 if "opts" not in globals(): opts = ""

@@ -25,7 +25,7 @@
 # Peter's Directory Status Metadata Management System
 
 # Dependencies
-from .repl import *
+from repl import *
 
 # Variables
 
