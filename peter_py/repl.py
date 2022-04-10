@@ -10,12 +10,13 @@ Then`opt()`
 """
 
 # Hidden Imports
-from platform   import system as __about_system
-from os         import getcwd as __getcwd
-from os         import remove as __remove_file
-from shutil     import rmtree as __rmtree
+from platform   import system   as __about_system
+from os         import getcwd   as __getcwd
+from os         import remove   as __remove_file
+from shutil     import rmtree   as __rmtree
 from datetime   import datetime as __datetime
 from datetime   import timezone as __timezone
+from uuid       import uuid4    as __uuid4
 
 # Enable easy object prototyping
 from types import SimpleNamespace
@@ -260,12 +261,33 @@ def src( subject: object ) -> None:
     print( srcl( subject ) )
 
 # Time Now Formatted My Style
+# NOTICE - Only accurate down to the last *second*, cuts off the fractional seconds
 def timenow() -> str:
     return str(__datetime.now(__timezone.utc)).replace(" ","T").replace("-00:00","").replace("+00:00","") + "Z"
 
 # Time Now for File Names on Windows
+# NOTICE - Only accurate down to the last *second*, cuts off the fractional seconds
 def timename() -> str:
-    return str(__datetime.now(__timezone.utc)).replace(" ","T").replace("-00:00","").replace("+00:00","").replace(":",".") + "Z"
+    new_time_name = str(__datetime.now(__timezone.utc)).replace(" ","T").replace("-00:00","").replace("+00:00","").replace(":","-")
+    return new_time_name[:new_time_name.rfind(".")] + "Z"
+
+# UUIDs - uses same name as a module - oh well - not sure what else to name it
+def pid() -> str:
+    return(f"peter201943:id:{__uuid4()}")
+
+# Number Printer Helper
+def commas(any) -> str:
+    any = str(any)
+    three = 0
+    final = ""
+    while any:
+        if three == 3:
+            final = "," + final
+            three = 0
+        final = any[-1] + final
+        three += 1
+        any = any[:-1]
+    return final
 
 # Ensure everything is working
 def __test() -> None:
